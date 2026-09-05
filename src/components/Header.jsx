@@ -27,7 +27,7 @@ function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img
-            src="/media/logo/det_logo.png"
+            src={`${import.meta.env.BASE_URL}media/logo/det_logo.png`}
             alt="The Detweilers"
           />
         </Link>

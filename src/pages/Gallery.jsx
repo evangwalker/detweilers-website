@@ -5,53 +5,53 @@ function Gallery() {
 
   const inverhuronPhotos_band = [
     {
-      src: "./media/images/image_jesse.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/image_jesse.jpg`,
       name: "Jesse",
     },
     {
-      src: "./media/images/image_wade.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/image_wade.jpg`,
       name: "Wade",
     },
     {
-      src: "./media/images/image_trevor.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/image_trevor.jpg`,
       name: "Trevor",
     },
     {
-      src: "./media/images/image_eric.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/image_eric.jpg`,
       name: "Eric",
     },
     {
-      src: "./media/images/image_cam.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/image_cam.jpg`,
       name: "Cam",
     },
     {
-      src: "./media/images/image_evan.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/image_evan.jpg`,
       name: "Evan",
     },
   ]
   const inverhuronPhotos = [
     {
-      src: "./media/images/gallery_inverhuron_wadeanderic.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_wadeanderic.jpg`,
       name: "huron-1",
     },
     {
-      src: "./media/images/gallery_inverhuron_group.jpg",
+      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_group.jpg`,
       name: "huron-2",
     },
     {
-      src: "./media/images/gallery_inverhuron_drumview.webp",
+      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_drumview.webp`,
       name: "huron-3",
     },
     {
-      src: "./media/images/gallery_inverhuron_camsparents.png",
+      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_camsparents.png`,
       name: "huron-4",
     },
     {
-      src: "./media/images/possible_background_2.png",
+      src: `${import.meta.env.BASE_URL}media/images/possible_background_2.png`,
       name: "huron-5",
     },
     {
-      src: "./media/images/gallery-inverhuron.webp",
+      src: `${import.meta.env.BASE_URL}media/images/gallery-inverhuron.webp`,
       name: "huron-6",
     },
   ]

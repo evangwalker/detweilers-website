@@ -6,7 +6,7 @@ function Home() {
     <>
       <main>
         <section className="hero">
-          <img src="../media/images/detweilers_homepage_background.webp" />
+          <img src={`${import.meta.env.BASE_URL}media/images/detweilers_homepage_background.webp`} />
           <p>A rag tag assortment of gentlemen and scholars.  This supergroup will 
              cover all your favourites from the 60's to 2000's.  Gather your blocks, 
              pull up your socks, and get ready to rock.</p>
@@ -24,7 +24,7 @@ function Home() {
 
             <div className="show-poster">
                 <img
-                    src="/media/posters/poster_ov.jpg"
+                    src={`${import.meta.env.BASE_URL}media/posters/poster_ov.jpg`}
                     alt="The Detweilers at Olde Village Free House"
                 />
             </div>

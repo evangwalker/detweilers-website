@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/detweilers-website/',
+  
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
