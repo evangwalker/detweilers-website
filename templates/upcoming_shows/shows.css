@@ -1,0 +1,14 @@
+.upcoming-shows {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.show-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-text ul {
+  list-style: none;
+}
