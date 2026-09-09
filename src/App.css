@@ -10,7 +10,8 @@ header {
   display: flex;
   padding: 20px 0;
   z-index: 10;
-  background-color: #141414;
+  background-image: url("/media/images/website_static.png");
+  background-repeat: repeat;
 }
 
 header h1 {

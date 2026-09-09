@@ -8,7 +8,8 @@
 body {
   margin: 0;
   min-width: 320px;
-  background-color: #141414;
+  background-image: url("/media/images/website_static.png");
+  background-repeat: repeat;
   font-family: 'Poppins', sans-serif;
   color: white;
 }

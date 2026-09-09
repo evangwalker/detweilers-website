@@ -35,7 +35,7 @@ function Gallery() {
       name: "huron-1",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_group.jpg`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_fullband.webp`,
       name: "huron-2",
     },
     {
@@ -43,7 +43,7 @@ function Gallery() {
       name: "huron-3",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_camsparents.png`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_fullbandlight.webp`,
       name: "huron-4",
     },
     {
