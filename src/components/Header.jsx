@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
 
@@ -27,7 +27,7 @@ function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img
-            src={`${import.meta.env.BASE_URL}media/logo/det_logo.png`}
+            src={`${import.meta.env.BASE_URL}media/logo/logo_D.png`}
             alt="The Detweilers"
           />
         </Link>
@@ -39,9 +39,22 @@ function Header() {
       </button>
       <nav className={menuOpen ? "open" : ""}>
           <ul>
-            <li><a href="#upcoming-shows">Showtimes</a></li>
-            <li><a href="#contact">Book Us</a></li>
-            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/#upcoming-shows">Showtimes</Link></li>
+            <li><Link to="/#contact">Book Us</Link></li>
+            <li><NavLink 
+                  to="/gallery"
+                  className={({ isActive }) => isActive ? "active" : ""}
+                >
+                  Gallery
+                </NavLink>
+            </li>
+            <li><NavLink 
+                  to="/posters"
+                  className={({ isActive }) => isActive ? "active" : ""}
+                >
+                  Gigs of yore
+                </NavLink>
+            </li>
           </ul>
       </nav>
     </header>

@@ -5,53 +5,59 @@ function Gallery() {
 
   const inverhuronPhotos_band = [
     {
-      src: `${import.meta.env.BASE_URL}media/images/image_jesse.jpg`,
+      bw: `${import.meta.env.BASE_URL}media/images/band_members/jesse_bw.webp`,
+      colour: `${import.meta.env.BASE_URL}media/images/band_members/jesse_colour.webp`,
       name: "Jesse",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/image_wade.jpg`,
+      bw: `${import.meta.env.BASE_URL}media/images/band_members/wade_bw.webp`,
+      colour: `${import.meta.env.BASE_URL}media/images/band_members/wade_colour.webp`,
       name: "Wade",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/image_trevor.jpg`,
+      bw: `${import.meta.env.BASE_URL}media/images/band_members/trevor_bw.webp`,
+      colour: `${import.meta.env.BASE_URL}media/images/band_members/trevor_colour.webp`,
       name: "Trevor",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/image_eric.jpg`,
+      bw: `${import.meta.env.BASE_URL}media/images/band_members/eric_bw.webp`,
+      colour: `${import.meta.env.BASE_URL}media/images/band_members/eric_colour.webp`,
       name: "Eric",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/image_cam.jpg`,
+      bw: `${import.meta.env.BASE_URL}media/images/band_members/cam_bw.webp`,
+      colour: `${import.meta.env.BASE_URL}media/images/band_members/cam_colour.webp`,
       name: "Cam",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/image_evan.jpg`,
+      bw: `${import.meta.env.BASE_URL}media/images/band_members/evan_bw.webp`,
+      colour: `${import.meta.env.BASE_URL}media/images/band_members/evan_colour.webp`,
       name: "Evan",
     },
   ]
   const inverhuronPhotos = [
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_wadeanderic.jpg`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery/inverhuron/wadeanderic.webp`,
       name: "huron-1",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_fullband.webp`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery/inverhuron/fullband.webp`,
       name: "huron-2",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_drumview.webp`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery/inverhuron/drumview.webp`,
       name: "huron-3",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery_inverhuron_fullbandlight.webp`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery/inverhuron/fullbandday.webp`,
       name: "huron-4",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/possible_background_2.png`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery/inverhuron/fullbandnightlights.webp`,
       name: "huron-5",
     },
     {
-      src: `${import.meta.env.BASE_URL}media/images/gallery-inverhuron.webp`,
+      src: `${import.meta.env.BASE_URL}media/images/gallery/inverhuron/fullbandnight.webp`,
       name: "huron-6",
     },
   ]
@@ -69,27 +75,49 @@ function Gallery() {
           <>
           <div id="band-members" className="gallery-grid">
             {inverhuronPhotos_band.map((photo) => (
-              <img
-                key={photo.name}
-                src={photo.src}
-                alt={`${photo.name} of The Detweilers at Inverhuron`}
-              />
+              <div className="band-member" key={photo.name} tabIndex="0">
+                <img
+                  className="band-member-bw"
+                  src={photo.bw}
+                  alt={`${photo.name} of The Detweilers`}
+                />
+                <img
+                  className="band-member-colour"
+                  src={photo.colour}
+                  alt=""
+                />
+              </div>
             ))}
           </div>
           <div className="gallery-videos">
             <iframe
-              src="https://www.youtube-nocookie.com/embed/BbdM5w5SA4s"
-              title="The Detweilers - Don’t Do Me Like That [Live Tom Petty Cover] #classicrock #tompetty #rockandroll"
+              src="https://www.youtube-nocookie.com/embed/19CRaAfNLfQ"
+              title="Layla (Derek and the Dominos cover) - The Detweilers"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
 
             <iframe
-              src="https://www.youtube-nocookie.com/embed/7ALiDdvVLpM"
-              title="The Detweilers - Don’t Do Me Like That [Live Tom Petty Cover] #classicrock #tompetty #rockandroll"
+              src="https://www.youtube-nocookie.com/embed/bAMwleEE5Fw"
+              title="Won't Get Fooled Again (The Who cover) - The Detweilers"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/paXhT8x4zks"
+              title="Lady Madonna (The Beatles cover) - The Detweilers"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/2ShhlHOhQdk"
+              title="Teenage Dirtbag (Wheatus cover) - The Detweilers"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
           </div>

@@ -1,48 +1,121 @@
-import { Link } from 'react-router-dom'
-
 function Home() {
 
   return (
     <>
       <main>
         <section className="hero">
-          <img src={`${import.meta.env.BASE_URL}media/images/detweilers_homepage_background.webp`} />
+          <img src={`${import.meta.env.BASE_URL}media/logo/DETWEILERS_website_pic.webp`} alt="The Detweilers on stage performing"/>
           <p>A rag tag assortment of gentlemen and scholars.  This supergroup will 
              cover all your favourites from the 60's to 2000's.  Gather your blocks, 
              pull up your socks, and get ready to rock.</p>
         </section>
-        <iframe
-          className="featured-video"
-          src="https://www.youtube-nocookie.com/embed/8r-hUuzFyOo"
-          title="Roadhouse Blues (The Doors cover) - The Detweilers"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen>         
-        </iframe>
+        <section className="featured">
+          <div className="featured-section">
+            <h3>Guitarmonies!</h3>
+            <div className="featured-videos">
+              <iframe
+                className="featured-video"
+                src="https://www.youtube-nocookie.com/embed/0sR22YTEWRI"
+                title="Reelin' guitarmonies (Steely Dan cover) - The Detweilers"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen>         
+              </iframe>
+              <iframe
+                className="featured-video"
+                src="https://www.youtube-nocookie.com/embed/ZGpApCfbNkQ"
+                title="Time guitarmonies (Pink Floyd cover) - The Detweilers"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen>         
+              </iframe>
+            </div>
+            <hr />
+          </div>
+          <div className="featured-section">
+            <h3>Fan Favourites</h3>
+            <div className="featured-videos">
+              <iframe
+                className="featured-video"
+                src="https://www.youtube-nocookie.com/embed/KBNqayd0Jz0"
+                title="Born to Run (Bruce Springsteen cover) - The Detweilers"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen>         
+              </iframe>
+              <iframe
+                className="featured-video"
+                src="https://www.youtube-nocookie.com/embed/iLdCK7cO-uM"
+                title="Time Warp (Rocky Horror Picture Show cover) - The Detweilers"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen>         
+              </iframe>
+            </div>
+            <hr />
+          </div>
+          <div className="featured-section">
+            <h3>The Doctor is in...</h3>
+            <div className="featured-videos">
+              <iframe
+                className="featured-video"
+                src="https://www.youtube-nocookie.com/embed/_rCCGkCvefo"
+                title="Mamma Let Him Play solo (Doucette cover) - The Detweilers"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen>         
+              </iframe>
+              <iframe
+                className="featured-video"
+                src="https://www.youtube-nocookie.com/embed/g2SKWLFEfuI"
+                title="White Room solo (Cream cover) - The Detweilers"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen>         
+              </iframe>
+            </div>
+            <hr />
+          </div>
+        </section>
         <section id="upcoming-shows" className="upcoming-shows">
             <h2>Upcoming Shows</h2>
-
+            <p className="no-shows">Check back soon!</p>
+            {/*}
             <div className="show-poster">
                 <img
                     src={`${import.meta.env.BASE_URL}media/posters/poster_ov.jpg`}
                     alt="The Detweilers at Olde Village Free House"
+                    style={{ display: 'none' }}
                 />
             </div>
 
             <div className="show-text">
-                <h4>Olde Village Free House</h4>
-                <p>196 Main St S, Newmarket, ON L3Y 3Y9</p>
+                <h4></h4>
+                <p></p>
             
                 <p className="show-description">
-                    The Detweilers are back at our favourite Newmarket watering hole!
-                    We've been playing here since we were young Warthogs clearing the
-                    Savannah after every meal. Come join us for good beer, good tunes
-                    and a little slice of Hakuna Matata.
+                    
                 </p>
             </div>
+            */}
         </section>
-        <section id="contact">
+        <section id="contact" className="contact">
           <h2>Give us a shout!</h2>
+          <section className="insta-email">
+            <a
+              href="https://www.instagram.com/thedetweilers/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="The Detweilers on Instagram"
+              className="instagram-link"
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}media/logo/insta_logo.png`}
+                alt="Instagram"
+              />
+            </a>
+            <p>thedetweilersrock@gmail.com</p>
+          </section>
           <form 
             action="https://formspree.io/f/mqpkzbdb"
             method="POST"

@@ -1,9 +1,19 @@
-<img />
-<div className="show-text">
-    <h3>Upcoming Shows</h3>
-    <ul>
-        <li>Name of Bar</li>
-        <li>Time and Location</li>
-        <li>Description</li>
-    </ul>
-</div>
+<section id="upcoming-shows" className="upcoming-shows">
+    <h2>Upcoming Shows</h2>
+
+    <div className="show-poster">
+        <img
+            src={`${import.meta.env.BASE_URL}media/posters/`}
+            alt="The Detweilers at *location*"
+        />
+    </div>
+
+    <div className="show-text">
+        <h4>Bar/Venue/Event</h4>
+        <p>Location</p>
+            
+        <p className="show-description">
+            Description
+        </p>
+    </div>
+</section>
