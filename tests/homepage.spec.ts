@@ -24,18 +24,20 @@ test('has gig information', async ({ page }) => {
   await expect(page).toHaveTitle(/detweilers_website/);
 });
 
-test('instagram link works', async ({ page }) => {
+test('instagram link points to The Detweilers Instagram', async ({ page }) => {
   await page.goto('/');
 
-  const newPagePromise = page.waitForEvent('popup');
+  const instagramLink = page.getByRole('link', {
+    name: 'The Detweilers on Instagram'
+  });
 
-  await page
-    .getByRole('link', { name: 'The Detweilers on Instagram' })
-    .click();
-
-  const instagramPage = await newPagePromise;
-
-  await expect(instagramPage).toHaveURL(
+  await expect(instagramLink).toHaveAttribute(
+    'href',
     'https://www.instagram.com/thedetweilers/'
-  )
+  );
+
+  await expect(instagramLink).toHaveAttribute(
+    'target',
+    '_blank'
+  );
 });
