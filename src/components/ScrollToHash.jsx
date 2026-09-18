@@ -2,17 +2,21 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 function ScrollToHash() {
-  const { hash } = useLocation()
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
     if (!hash) return
 
-    const element = document.querySelector(hash)
+    const scrollToElement = () => {
+      const element = document.querySelector(hash)
 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      if (element) {
+        element.scrollIntoView()
+      }
     }
-  }, [hash])
+
+    requestAnimationFrame(scrollToElement)
+  }, [pathname, hash])
 
   return null
 }

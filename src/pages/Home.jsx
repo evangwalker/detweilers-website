@@ -111,7 +111,7 @@ function Home() {
             >
               <img
                 src={`${import.meta.env.BASE_URL}media/logo/insta_logo.png`}
-                alt="Instagram"
+                alt="Instagram logo"
               />
             </a>
             <p>thedetweilersrock@gmail.com</p>
