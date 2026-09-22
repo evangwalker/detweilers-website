@@ -7,7 +7,7 @@ function Header() {
 
     useEffect(() => {
       const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 600) {
         setMenuOpen(false)
       }
     }
@@ -24,7 +24,10 @@ function Header() {
       <h1 className="header-logo">
         <Link
           to="/"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => {
+            setMenuOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
         >
           <img
             src={`${import.meta.env.BASE_URL}media/logo/logo_D.png`}
@@ -39,11 +42,12 @@ function Header() {
       </button>
       <nav className={menuOpen ? "open" : ""}>
           <ul>
-            <li><Link to="/#upcoming-shows">Showtimes</Link></li>
-            <li><Link to="/#contact">Book Us</Link></li>
+            <li><Link to="/#upcoming-shows" onClick={() => setMenuOpen(false)}>Showtimes</Link></li>
+            <li><Link to="/#contact" onClick={() => setMenuOpen(false)}>Book Us</Link></li>
             <li><NavLink 
                   to="/gallery"
                   className={({ isActive }) => isActive ? "active" : ""}
+                  onClick={() => setMenuOpen(false)}
                 >
                   Gallery
                 </NavLink>
@@ -51,6 +55,7 @@ function Header() {
             <li><NavLink 
                   to="/posters"
                   className={({ isActive }) => isActive ? "active" : ""}
+                  onClick={() => setMenuOpen(false)}
                 >
                   Gigs of yore
                 </NavLink>

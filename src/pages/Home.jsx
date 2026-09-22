@@ -5,7 +5,7 @@ function Home() {
       <main>
         <section className="hero">
           <img src={`${import.meta.env.BASE_URL}media/logo/DETWEILERS_website_pic.webp`} alt="The Detweilers on stage performing"/>
-          <p>A rag tag assortment of gentlemen and scholars.  This supergroup will 
+          <p>A rag tag assortment of gentlemen and scholars based out of the GTA.  This supergroup will 
              cover all your favourites from the 60's to 2000's.  Gather your blocks, 
              pull up your socks, and get ready to rock.</p>
         </section>
@@ -101,6 +101,7 @@ function Home() {
         </section>
         <section id="contact" className="contact">
           <h2>Give us a shout!</h2>
+          <p>We do weddings, private parties, public events and bars!</p>
           <section className="insta-email">
             <a
               href="https://www.instagram.com/thedetweilers/"

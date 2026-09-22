@@ -2,6 +2,11 @@ li {
   text-decoration: none;
 }
 
+main {
+  position: relative;
+  top: 75px;
+}
+
 /*Header*/
 
 header {
@@ -9,8 +14,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+
+  height: 65px;
+  box-sizing: border-box;
+
   display: flex;
-  padding: 20px 0;
+  align-items: center;
+
+  padding: 0;
   z-index: 10;
   background-image: url("/media/background/website_static.png");
   background-repeat: repeat;
@@ -18,7 +29,8 @@ header {
 
 header h1 {
   position: absolute;
-  width: clamp(80px, 6vw, 100px);
+  width: 70px;
+  
   top: -15px;
   left: 10px;
   z-index: 10;
@@ -85,12 +97,14 @@ header nav a.active {
 /*Home*/
 
 .hero {
-  margin-top: clamp(-80px, calc(-3.5vw), 20px);
+  margin-top: 0;
 }
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: clamp(300px, 55vw, 1000px);
+  object-fit: cover;
+  object-position: center 35%;
   display: block;
 }
 
@@ -100,7 +114,7 @@ header nav a.active {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-weight: 600;
-  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  font-size: clamp(1.3rem, 1.6vw, 2rem);
   padding: 1.5rem;
   margin: 0 auto;;
 }
@@ -220,7 +234,12 @@ hr {
 
 #contact h2 {
   font-size: clamp(1.5rem, 2vw, 2.2rem);
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+#contact p {
+  font-size: clamp(1rem, 1.25vw, 1.3rem);
   text-align: center;
 }
 
@@ -300,7 +319,7 @@ hr {
 /*Gallery*/
 
 .gallery {
-  margin-top: 65px;
+  margin-top: 0;
 }
 
 .gallery h1 {
@@ -390,7 +409,7 @@ hr {
 /*Poster Archive*/
 
 .archive {
-  margin-top: 65px;
+  margin-top: 0;
 }
 
 .archive h1 {
@@ -416,7 +435,7 @@ hr {
   border-radius: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   /*Header*/
 
@@ -434,7 +453,7 @@ hr {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 70vw;
+    width: 80vw;
     background-color: #141414;
   }
 
@@ -448,7 +467,7 @@ hr {
     text-align: center;
   }
 
-  header nav.open a {
+  header nav.open li {
   font-size: clamp(0.8rem, 2.5vw, 1rem);
   }
 
@@ -456,7 +475,6 @@ hr {
 
   .hero {
     height: auto;
-    margin-top: 30px;
   }
 
   .hero p {
@@ -472,17 +490,13 @@ hr {
     box-sizing: border-box;
   }
 
-  .hero img {
-    height: auto;
-    display: block;
-  }
-
   .featured-videos {
     flex-direction: column;
   }
 
   .featured-video {
     margin-top: 3rem;
+    width: 70%;
   }
 
   .upcoming-shows {
@@ -498,6 +512,10 @@ hr {
     flex-basis: 100%;
   }
 
+  .insta-email {
+    flex-direction: column;
+  }
+
   /*Gallery*/
 
   .gallery-grid {
@@ -507,6 +525,10 @@ hr {
   .gallery-videos {
     grid-template-columns: 1fr;
   } 
+
+  .gallery-videos iframe {
+    width: 110%;
+  }
 
   /*Poster Archive*/
 
