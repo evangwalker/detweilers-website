@@ -8,15 +8,15 @@ type ViewportCase = {
 const viewportCases: ViewportCase[] = [
 
     { 
-      width: 767, 
+      width: 599, 
       mode: 'mobile'
     },
     { 
-      width: 768, 
+      width: 600, 
       mode: 'mobile'
     },
     {
-      width: 769,
+      width: 601,
       mode: 'desktop'
     }
 ];
