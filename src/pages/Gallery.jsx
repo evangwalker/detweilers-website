@@ -67,7 +67,7 @@ function Gallery() {
       <h1>Gallery</h1>
       
       <nav className="gallery-tabs">
-        <button className={activeGallery === "inverhuron" ? "active" : ""} onClick={() => setActiveGallery("inverhuron")}>Inverhuron</button>
+        <button className={activeGallery === "inverhuron" ? "active" : ""} aria-pressed={activeGallery === "inverhuron"} onClick={() => setActiveGallery("inverhuron")}>Inverhuron</button>
       </nav>
 
       <section className="image-container">

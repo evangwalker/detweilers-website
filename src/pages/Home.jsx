@@ -11,7 +11,7 @@ function Home() {
         </section>
         <section className="featured">
           <div className="featured-section">
-            <h3>Guitarmonies!</h3>
+            <h2>Guitarmonies!</h2>
             <div className="featured-videos">
               <iframe
                 className="featured-video"
@@ -33,7 +33,7 @@ function Home() {
             <hr />
           </div>
           <div className="featured-section">
-            <h3>Fan Favourites</h3>
+            <h2>Fan Favourites</h2>
             <div className="featured-videos">
               <iframe
                 className="featured-video"
@@ -55,7 +55,7 @@ function Home() {
             <hr />
           </div>
           <div className="featured-section">
-            <h3>The Doctor is in...</h3>
+            <h2>The Doctor is in...</h2>
             <div className="featured-videos">
               <iframe
                 className="featured-video"
@@ -115,7 +115,7 @@ function Home() {
                 alt="Instagram logo"
               />
             </a>
-            <p>thedetweilersrock@gmail.com</p>
+            <a class="email-link" href="mailto:thedetweilersrock@gmail.com" >thedetweilersrock@gmail.com</a>
           </section>
           <form 
             action="https://formspree.io/f/mqpkzbdb"

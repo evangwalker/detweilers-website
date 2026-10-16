@@ -125,8 +125,10 @@ header nav a.active {
   text-align: center;
 }
 
-.featured h3 {
+.featured h2 {
   padding-top: 2rem;
+  font-size: 18.72;
+  font-weight: 700;
 }
 
 .featured-videos {
@@ -251,8 +253,22 @@ hr {
   margin-bottom: 2rem;
 }
 
-.insta-email p {
+.email-link,
+.email-link:visited {
+  color: inherit;          /* matches the surrounding text */
+  text-decoration: underline;
+  text-underline-offset: 3px;
   font-size: clamp(1rem, 1.25vw, 1.3rem);
+}
+
+.email-link:hover {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.email-link:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
 }
 
 .instagram-link img {

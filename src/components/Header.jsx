@@ -35,7 +35,7 @@ function Header() {
           />
         </Link>
       </h1>
-      <button className="menu-button" aria-label="Open navigation" onClick={() => setMenuOpen(!menuOpen)}>
+      <button className="menu-button" aria-label="Menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
