@@ -4,7 +4,7 @@ test('has title', async ({ page }) => {
   await page.goto('/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/detweilers_website/);
+  await expect(page).toHaveTitle(/The Detweilers | GTA Cover Band for Weddings & Events/);
 });
 
 test('has gig information', async ({ page }) => {
@@ -21,7 +21,7 @@ test('has gig information', async ({ page }) => {
       ).toBeVisible();
     }
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/detweilers_website/);
+  await expect(page).toHaveTitle(/The Detweilers | GTA Cover Band for Weddings & Events/);
 });
 
 test('instagram link points to The Detweilers Instagram', async ({ page }) => {

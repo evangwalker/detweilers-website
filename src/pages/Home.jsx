@@ -115,7 +115,7 @@ function Home() {
                 alt="Instagram logo"
               />
             </a>
-            <a class="email-link" href="mailto:thedetweilersrock@gmail.com" >thedetweilersrock@gmail.com</a>
+            <a className="email-link" href="mailto:thedetweilersrock@gmail.com" >thedetweilersrock@gmail.com</a>
           </section>
           <form 
             action="https://formspree.io/f/mqpkzbdb"

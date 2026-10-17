@@ -30,7 +30,7 @@ for (const viewport of viewportCases) {
     });
     await page.goto('/');
 
-    const menuButton = page.getByRole('button', { name: 'Open navigation' });
+    const menuButton = page.getByRole('button', { name: 'Menu' });
 
     if (viewport.mode === 'mobile') {
         await expect(menuButton).toBeVisible();

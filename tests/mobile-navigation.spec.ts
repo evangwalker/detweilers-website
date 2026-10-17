@@ -27,7 +27,7 @@ for (const navigation of navigationCases) {
       await page.goto('/');
 
       await page
-        .getByRole('button', { name: 'Open navigation' })
+        .getByRole('button', { name: 'Menu' })
         .click();
 
       await page
